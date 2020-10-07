@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!-- hierachrical definition of a character -->
+<!-- Student Name: Curtis Lin -->
+<!-- Student ID: 260770287 -->
+<doc>
+	<node type="free" name="world">
+    <node type="spherical" name="root" position="0 1 0" degrees="0 0 0">
+    	<geom type="box" name="visor" center="0 -0.25 0.25" scale="1.25 0.5 1" color="0 1 1" />
+    	<geom type="box" name="backpack" center="0 -0.5 -0.5" scale="1.25 1 0.5" color="1 0 0" />
+    	<geom type="box" name="gRoot" center="0 -0.5 0" scale="1.5 2 1" color="1 0 0" />
+    	<node type="spherical" name="RS" degrees="0 0 0" position="1 0 0" minMaxRx="-180 0" minMaxRy="0 90" minMaxRz="0 90">
+    		<geom type="sphere" name="RSS" center="0 0 0" scale="0.25 0.25 0.25" color="0 1 1" />
+    		<geom type="box" name="RUA" center="0 -0.5 0" scale="0.25 1 0.5" color="0 1 0" />
+    		<node type="rotary" name="RE" position="0 -1 0" axis="1 0 0" minMax="-150 0">
+    			<geom type="sphere" name="RES" center="0 0 0" scale="0.25 0.25 0.25" color="0 1 1" />
+    			<geom type="box" name="RLA" center="0 -0.5 0" scale="0.25 1 0.5" color="0 0 1" />
+    		</node>
+    	</node>
+    	<node type="spherical" name="LS" degrees="0 0 0" position="-1 0 0" minMaxRx="-180 0" minMaxRy="-90 0" minMaxRz="-90 0">
+    		<geom type="sphere" name="LSS" center="0 0 0" scale="0.25 0.25 0.25" color="0 1 1" />
+    		<geom type="box" name="LUA" center="0 -0.5 0" scale="0.25 1 0.5" color="0 1 0" />
+    		<node type="rotary" name="LE" position="0 -1 0" axis="1 0 0" minMax="-150 0">
+    			<geom type="sphere" name="LES" center="0 0 0" scale="0.25 0.25 0.25" color="0 1 1" />
+    			<geom type="box" name="LLA" center="0 -0.5 0" scale="0.25 1 0.5" color="0 0 1" />
+    		</node>
+    	</node>
+    	<node type="spherical" position="0 -1.5 0" degrees="0 0 0" name="pelvis" minMaxRx="-90 40" minMaxRy="-30 30" minMaxRz="-5 5">
+    		<node type="spherical" name="RP" position="0.5 0 0" degrees="0 0 0" minMaxRx="-90 70" minMaxRy="-75 75" minMaxRz="0 90">
+    			<geom type="sphere" name="RPS" center="0 0 0" scale="0.25 0.25 0.25" color="0 1 1" />
+    			<geom type="box" name="RUL" center="0 -0.5 0" scale="0.25 1 0.5" color="0 1 0" />
+    			<node type="rotary" name="RK" position="0 -1 0" axis="1 0 0" minMax="0 150">
+    				<geom type="sphere" name="RKS" center="0 0 0" scale="0.25 0.25 0.25" color="0 1 1" />
+    				<geom type="box" name="RLE" center="0 -0.5 0" scale="0.25 1 0.5" color="0 0 1" />
+    			</node>
+    		</node>
+    		<node type="spherical" name="LP" position="-0.5 0 0" degrees="0 0 0" minMaxRx="-90 70" minMaxRy="-75 75" minMaxRz="-90 0">
+    			<geom type="sphere" name="LPS" center="0 0 0" scale="0.25 0.25 0.25" color="0 1 1" />
+    			<geom type="box" name="LUL" center="0 -0.5 0" scale="0.25 1 0.5" color="0 1 0" />
+    			<node type="rotary" name="LK" position="0 -1 0" axis="1 0 0" minMax="0 150">
+    				<geom type="sphere" name="LKS" center="0 0 0" scale="0.25 0.25 0.25" color="0 1 1" />
+    				<geom type="box" name="LLE" center="0 -0.5 0" scale="0.25 1 0.5" color="0 0 1" />
+    			</node>
+    		</node>
+    	</node>
+    </node>
+    </node>
+</doc>
