@@ -8,7 +8,7 @@ import mintools.parameters.BooleanParameter;
 
 public class CharacterMaker {
 
-	static public String name = "CHARACTER NAME - Curtis Lin 260770287";
+	static public String name = "Crewmate - Curtis Lin 260770287";
 	
 	// TODO: Objective 8: change default of load from file to true once you start working with xml
 	static BooleanParameter loadFromFile = new BooleanParameter( "Load from file (otherwise by procedure)", true );

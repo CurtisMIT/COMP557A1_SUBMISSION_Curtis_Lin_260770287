@@ -80,7 +80,6 @@ public class CharacterFromXML {
 		String type = dataNode.getAttributes().getNamedItem("type").getNodeValue();
 		String name = dataNode.getAttributes().getNamedItem("name").getNodeValue();
 		Tuple3d t;
-		System.out.println(type);
 		if ( type.equals("free") ) {
 			FreeJoint joint = new FreeJoint( name );
 			return joint;

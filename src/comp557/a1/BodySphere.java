@@ -7,6 +7,7 @@ import javax.vecmath.Tuple3d;
 import com.jogamp.opengl.GL4;
 import com.jogamp.opengl.GLAutoDrawable;
 
+
 import comp557.a1.geom.Sphere;
 import mintools.parameters.DoubleParameter;
 
